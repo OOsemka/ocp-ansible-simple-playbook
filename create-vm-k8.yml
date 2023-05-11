@@ -1,6 +1,6 @@
 - name: Create openshift object
   hosts: localhost
-  become: true
+  #become: true
   vars:
     vm_name: ansible-test-vm
     oc_namespace: default
