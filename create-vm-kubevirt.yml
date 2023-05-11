@@ -6,7 +6,7 @@
 
   tasks:
   - name: create virtual machine using kubvirt ansible module
-    kubevirt_vm:
+    community.kubevirt.kubevirt_vm:
       state: running
       name: "{{ vm_name }}"
       namespace: "{{ oc_namespace }}"
