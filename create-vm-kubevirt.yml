@@ -8,8 +8,8 @@
   - name: create virtual machine using kubvirt ansible module
     kubevirt_vm:
       state: running
-      name: {{ vm_name }}
-      namespace: {{ oc_namespace }}
+      name: "{{ vm_name }}"
+      namespace: "{{ oc_namespace }}"
       cpu_cores: 2
       memory: 512Mi
       disks:
